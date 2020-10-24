@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body style="text-align: center; border-style: groove; background:brown">
+        <h1>LETTER</h1>
+        <h1>COUNTER</h1>
+       <input type="text" /></br>
+       <label style="font-size: larger;">letter Count:</label>
+       <label id="l" style="font-size: larger;"></label>
+
+
+        <script>
+          
+       inputbox=document.querySelector("input");
+       inputbox.addEventListener("keyup",()=>
+       {
+       const box=document.querySelector("input").value;
+       const lenght=box.length
+       document.body.querySelector("#l").innerHTML=lenght;
+       });
+            
+          
+        </script>
+    </body>
+</html>
